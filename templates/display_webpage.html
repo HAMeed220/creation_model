@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    
+    <table border="5px">
+        <tr>
+            <th>
+                Topic_name
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Url
+            </th>
+            <th>
+                Gmail
+            </th>
+        </tr>
+   
+{% for wo in webpage %}
+    <tr>
+        <td>
+            {{wo.topic_name}}
+        </td>
+        
+        <td>
+            {{wo.name}}
+        </td>
+        <td>
+            {{wo.url}}
+
+        </td>
+        <td>
+            {{wo.gmail}}
+        </td>
+    </tr>
+{% endfor %}
+</table>
+</body>
+</html>
